@@ -4,32 +4,59 @@
     <meta charset="UTF-8">
     <title>ALATRISTE | Project Name</title>
     <link rel="stylesheet" href="../css/foundation.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
     <script src="../js/vendor/modernizr.js"></script>
   </head>
 
   <body>
-    <nav>
-	  <ul>
-        <li><a href="../index.html#home">Home</a></li>
-        <li><a href="../index.html#projects">Projects</a></li>
-        <li><a href="../index.html#about">About</a></li>
-        <li><a href="../index.html#contact">Contact</a></li>
+  <div class="sticky">
+    <nav class="top-bar hide-for-medium-up" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <a href="../index.html"><img class="logo" src="../images/alatriste-logo.svg" alt="logo"></a>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
+
+  	  <section class="top-bar-section">
+    	<ul class="right">
+      	  <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+      	  <li><a href="../index.html#about">About</a></li>
+     	  <li><a href="../index.html#contact">Contact</a></li>
+    	</ul>
+  	  </section>
 	</nav>
+  </div>
     
-    <img class="column large-12 medium-12 left" src="http://placehold.it/400x200" alt="project">
+    <div>
+    <img class="column large-12 medium-12" src="http://placehold.it/400x200" alt="project">
+    </div>
+    
+    <div class="columns hide-for-small-only" data-magellan-expedition="fixed">
+    <a href="#home"><img class="columns large-1 medium-1 left" src="../images/alatriste-logo.svg" alt="logo"></a>
+    
+  <dl class="sub-nav columns right">
+    <dt data-magellan-arrival="home"><a href="../index.html#home">Home</a></dt>
+    <dd data-magellan-arrival="projects"><a href="../index.html#projects">PROJECTS</a></dd>
+    <dd data-magellan-arrival="about"><a href="../index.html#about">ABOUT</a></dd>
+    <dd data-magellan-arrival="contact"><a href="../index.html#contact">CONTACT</a></dd>
+  </dl>
+</div>
    
+   <section id="project-information">
     <div class="left column large-4 medium-4 large-offset-1 medium-offset-1">
-	<h2>ChapStick</h2>
+	<h1>ChapStick</h1>
 	<p>Ad Campaing</p>
 	<p>Print</p>
     </div>
 
-	<div class="left column large-5 medium-5 large-offset-1 medium-1">
+	<div class="left column large-5 medium-5 large-offset-1 medium-offset-1">
 	<p>An ad campaign for ChapStick aimed toward young women in their early twenties not so interested in having the sexiest lips, but wanting to have nice, non-chapped lips. The Ad Campaign was composed of three print components, an online component and an environmental component.</p>
     </div>
+    </section>
 
-	<section id="project-images" class="left large-10 medium-10 large-offset-1 medium-offset-1">
+	<section id="project-images" class="left column large-10 medium-10 large-offset-1 medium-offset-1">
     
 	<img class="column large-12 medium-12 small-12 left" src="http://placehold.it/400x200" alt="project">
     
@@ -39,50 +66,61 @@
     
     <img class="column large-12 medium-12 small-12 left" src="http://placehold.it/400x200" alt="project">
 
-	<p class="column left large-6 medium-6 small-12">An online component was needed to convey the message of the campaign on the internet, but have more of an interactive part to  give more of an interest.</p>
+	<div id="project-blurb" class="column left large-5 medium-5 small-12">
+	<p>An online component was needed to convey the message of the campaign on the internet, but have more of an interactive part to  give more of an interest.</p>
+    </div>
     
-    <img class="column large-6 medium-6 small-6 left" src="http://placehold.it/400x400" alt="project">
+    <img class="column large-6 large-offset-1 medium-6 medium-offset-1 small-6 left" src="http://placehold.it/400x400" alt="project">
     
     <img class="column large-12 medium-12 small-6 left" src="http://placehold.it/400x200" alt="project">
     </section>
     
-    <div class="left column large-4 medium-4 small-6 large-offset-1 medium-offset-1 ">
+    <section id="more-projects" class="column large-12 medium-12">
+    <div id="previous-project" class="left column large-4 medium-4 small-5 large-offset-1 medium-offset-1 ">
+    <a href="">
     <img class="column large-6 medium-6" src="http://placehold.it/400x400" alt="project">
       <div class="left column large-6 medium-6">
         <p>Previus Project</p>
         <p>Project Name</p>
       </div>
+      </a>
     </div>
     
-    <div class="left column large-4 medium-4 small-6 large-offset-2 medium-offset-2">
+    <div id="next-project" class="left column large-4 medium-4 small-5 large-offset-2 medium-offset-2 small-offset-2">
+    <a href="">
     <img class="right column large-6 medium-6" src="http://placehold.it/400x400" alt="project">
       <div class="right column large-6 medium-6">
         <p>Next Project</p>
         <p>Project Name</p>
       </div>
+      </a>
     </div>
+    </section>
 
 	<footer class="column large-12 medium-12">
-      <div class="column large-3 medium-3">
+      <div class="bottom">
+      <div class="column large-3 medium-3 small-6">
 	  <p>alatristedaniel@yahoo.com</p>
 	  <p>402–802–3140</p>
       </div>
-      <div class="column large-3 medium-3 large-offset-1 medium-offset-1">
+      <div class="column large-3 medium-3 large-offset-1 medium-offset-2 hide-for-small-only">
 	  <ul>
-		<li><a href="#home">Home</a></li>
-		<li><a href="#projects">Projects</a></li>
-		<li><a href="#about">About</a></li>
-		<li><a href="#contact">Contact</a></li>
+		<li><a href="../index.html#home">Home</a></li>
+		<li><a href="../index.html#projects">Projects</a></li>
+		<li><a href="../index.html#about">About</a></li>
+		<li><a href="../index.html#contact">Contact</a></li>
 	  </ul>
       </div>
-      <div class="column large-3 medium-3 large-offset-2 medium-offset-2">
-	  <small>&copy; Copyright</small>
+      <div class="column large-3 medium-3 large-offset-2 medium-offset-1 small-6">
+	  <small class="right">&copy; Copyright</small>
+      </div>
       </div>
 	</footer>
     
-<script src="/js/vendor/jquery.js"></script>
-<script src="/js/vendor/fastclick.js"></script>
-<script src="/js/foundation.min.js"></script>
+<script src="../js/vendor/jquery.js"></script>
+<script src="../js/vendor/fastclick.js"></script>
+<script src="../js/foundation/equalizer.js"></script>
+<script src="../js/foundation.min.js"></script>
 <script>
   $(document).foundation();
 </script>
