@@ -26,6 +26,20 @@ h1 {
 	padding: 50px 5% 75px;
 }
 
+.project-image {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+    
+    
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.project-image:hover {
+    
+    -webkit-filter: grayscale(0%);
+}
+
 #about {
 	padding: 75px 5%;
 }
@@ -44,12 +58,6 @@ small {
 	padding-top:50px;
 }
 
-.project-image {
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-}
-
 #project-information {
 	padding: 50px 5% 75px;
 }
@@ -58,23 +66,38 @@ small {
 	padding: 50px 5% 75px;
 }
 
-.project-1 {
+#project-images img {
+    
+    
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 
-.project-2 {
+#project-images img:hover {
+    
+    -webkit-filter: grayscale(0%);
 }
 
-.project-3 {
+#more-projects img {
+    
+    
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 
-.project-4 {
+#more-projects img:hover {
+    
+    -webkit-filter: grayscale(0%);
 }
 
-.project-5 {
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+	padding:20px;
 }
 
-.project-6 {
+.project-1:hover, .project-2:hover, .project-3:hover, .project-5:hover, .project-4:hover, .project-6:hover {
+	border-style:solid;
+	border-color:#efc94c;
+	padding:17px;
 }
+
 
 .project-description {
 	padding-top:75px;
@@ -95,6 +118,10 @@ small {
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
+}
+
+.next-previous-links {
+	padding-top:50px;
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -146,6 +173,10 @@ small {
 	#more-projects {
 		padding: 0px 5% 50px;
 	}
+	
+	.next-previous-links {
+	padding-top:0px;
+	}
 }
 
 @media only screen and (max-width: 40em) {
@@ -180,10 +211,33 @@ small {
 		border-radius:0;
 		-webkit-border-radius:0;
 		-moz-border-radius:0;
+		
+	}
+	
+	#project-images img {
+		border-radius:0;
+		-webkit-border-radius:0;
+		-moz-border-radius:0;
+		
+	}
+	
+	#more-projects img {
+		
 	}
 
 	#projects {
 		padding: 30px 5% 0px;
+	}
+
+	
+	.project-1, .project-2, .project-3, .project-4, 			.project-5, .project-6 {
+		padding:0;
+	}
+
+	.project-1:hover, .project-2:hover, .project-3:hover, .project-5:hover, .project-4:hover, .project-6:hover {
+		border-style:none;
+		border-color:#efc94c;
+		padding:0px;
 	}
 
 	#about {
@@ -226,5 +280,9 @@ small {
 	
 	#more-projects p {
 		padding-top:30px;
+	}
+	
+	.next-previous-links {
+	padding-top:0px;
 	}
 }
