@@ -14,7 +14,8 @@
 	margin: 0;
     position: absolute;
     top: 50%;                         
-    transform: translate(0, -50%)
+    transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
 }
 
 h1 {
@@ -26,18 +27,45 @@ h1 {
 	padding: 50px 5% 75px;
 }
 
+.magellan-nav {
+	background:none;
+}
+
+.sub-nav dt a, .sub-nav dd a, .sub-nav li a {
+	color:red;
+}
+
+.sub-nav dt a:hover, .sub-nav dd a:hover, .sub-nav li a:hover {
+	color:yellow;
+}
+
+.sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
+	background:green;
+}
+
+.sub-nav dt.active a:hover, .sub-nav dd.active a:hover, .sub-nav li.active a:hover {
+	background:pink;
+	color:white;
+}
+
 .project-image {
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-    
-    
-    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	-webkit-filter: grayscale(100%); 
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	
 }
 
 .project-image:hover {
-    
-    -webkit-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); 
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 
 #about {
@@ -59,7 +87,7 @@ small {
 }
 
 #project-information {
-	padding: 50px 5% 75px;
+	padding: 50px 5% 0px;
 }
 
 #project-images {
@@ -67,25 +95,35 @@ small {
 }
 
 #project-images img {
-    
-    
-    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-filter: grayscale(100%); 
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 #project-images img:hover {
-    
-    -webkit-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); 
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 
 #more-projects img {
-    
-    
-    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-filter: grayscale(100%); 
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 #more-projects img:hover {
-    
-    -webkit-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); 
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 
 .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
@@ -159,7 +197,7 @@ small {
 	}
 	
 	#project-information {
-		padding: 50px 5%;
+		padding: 50px 5% 0px;
 	}
 	
 	#project-images {
@@ -211,18 +249,30 @@ small {
 		border-radius:0;
 		-webkit-border-radius:0;
 		-moz-border-radius:0;
-		
+		-webkit-filter: grayscale(0%); 
+		-moz-filter: grayscale(0%);
+		-ms-filter: grayscale(0%);
+		-o-filter: grayscale(0%);
+		filter: grayscale(0%);
 	}
 	
 	#project-images img {
 		border-radius:0;
 		-webkit-border-radius:0;
 		-moz-border-radius:0;
-		
+		-webkit-filter: grayscale(0%); 
+		-moz-filter: grayscale(0%);
+		-ms-filter: grayscale(0%);
+		-o-filter: grayscale(0%);
+		filter: grayscale(0%);
 	}
 	
 	#more-projects img {
-		
+		-webkit-filter: grayscale(0%); 
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
 	}
 
 	#projects {
@@ -259,7 +309,7 @@ small {
 	}
 	
 	#project-information {
-		padding: 30px 5%;
+		padding: 0px 5%;
 	}
 	
 	#project-information h1 {
@@ -283,6 +333,6 @@ small {
 	}
 	
 	.next-previous-links {
-	padding-top:0px;
+		padding-top:0px;
 	}
 }

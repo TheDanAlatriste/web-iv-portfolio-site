@@ -8,6 +8,15 @@
     <script src="../js/vendor/modernizr.js"></script>
   </head>
   <body>
+  <div class="columns hide-for-small-only magellan-nav" data-magellan-expedition="fixed">
+      <a href="../index.html#home"><img class="columns large-1 medium-1 left" src="../images/alatriste-logo.svg" alt="logo"></a>
+      <dl class="sub-nav columns right">
+        <dt data-magellan-arrival="home"><a href="../index.html#home">Home</a></dt>
+        <dd data-magellan-arrival="projects"><a href="../index.html#projects">PROJECTS</a></dd>
+        <dd data-magellan-arrival="about"><a href="../index.html#about">ABOUT</a></dd>
+        <dd data-magellan-arrival="contact"><a href="../index.html#contact">CONTACT</a></dd>
+      </dl>
+  </div>
     <div class="sticky">
       <nav class="top-bar hide-for-medium-up" data-topbar role="navigation">
         <ul class="title-area">
@@ -26,20 +35,11 @@
         </section>
       </nav>
     </div>
-    <div>
+    <section id="project-header">
       <img class="column large-12 medium-12" src="http://placehold.it/400x200" alt="project">
-    </div>
-    <div class="columns hide-for-small-only" data-magellan-expedition="fixed">
-      <a href="../index.html#home"><img class="columns large-1 medium-1 left" src="../images/alatriste-logo.svg" alt="logo"></a>
-      <dl class="sub-nav columns right">
-        <dt data-magellan-arrival="home"><a href="../index.html#home">Home</a></dt>
-        <dd data-magellan-arrival="projects"><a href="../index.html#projects">PROJECTS</a></dd>
-        <dd data-magellan-arrival="about"><a href="../index.html#about">ABOUT</a></dd>
-        <dd data-magellan-arrival="contact"><a href="../index.html#contact">CONTACT</a></dd>
-      </dl>
-    </div>
-    <section id="project-information">
-      <div class="left column large-4 medium-4 large-offset-1 medium-offset-1">
+    </section>
+<section id="project-information" class="column">
+  <div class="left column large-4 medium-4 large-offset-1 medium-offset-1">
         <h1>ChapStick</h1>
         <p>Ad Campaing</p>
         <p>Print</p>
@@ -100,8 +100,12 @@
     </footer>
     <script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/fastclick.js"></script>
-    <script src="../js/foundation/equalizer.js"></script>
+    <script src="../js/foundation/foundation.js"></script>
     <script src="../js/foundation.min.js"></script>
+    <script src="../js/foundation/foundation.equalizer.js"></script>
+    <script src="../js/foundation/foundation.magellan.js"></script>
+    <script src="../js/foundation/foundation.offcanvas.js"></script>
+    <script src="../js/foundation/foundation.topbar.js"></script>
     <script>
       $(document).foundation();
     </script>
