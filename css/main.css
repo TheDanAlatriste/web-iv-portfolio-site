@@ -101,7 +101,7 @@ h1 {
 	-ms-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
-	filter: gray;
+	filter: ;
 }
 
 #about {
@@ -251,7 +251,7 @@ small {
 	-ms-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
-	filter: gray;
+	filter: ;
 }
 
 .top-image {
@@ -279,7 +279,7 @@ small {
 	-ms-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
-	filter: gray;
+	filter: ;
 }
 
 .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
