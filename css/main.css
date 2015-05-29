@@ -1,0 +1,888 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.column {
+	padding:0;
+}
+
+#home {
+	height:100vh;
+	position:relative;
+}
+
+.home-content {
+	margin: 0;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+}
+
+h1 {
+	padding-top:10px;
+	padding-bottom:30px;
+}
+
+#home h1 {
+	color:white;
+	font: normal 600 50px "omnes-pro", sans-serif;
+	text-transform: uppercase;
+}
+
+.image-border {
+	background:none;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+#home {
+	background:#3aa1bf;
+}
+
+#projects {
+	padding: 75px 5% 100px;
+}
+
+#projects a {
+	font: normal 300 40px "omnes-pro", sans-serif;
+}
+
+#projects p {
+	font: normal 300 16px/140% "omnes-pro", sans-serif;
+}
+
+.magellan-nav {
+	background:white;
+	opacity: .98;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.11);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.11);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.11);
+}
+
+.sub-nav dt a, .sub-nav dd a, .sub-nav li a {
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	color:#333333;
+	font: normal 400 15px "omnes-pro", sans-serif;
+	text-transform:uppercase;
+}
+
+.sub-nav dt a:hover, .sub-nav dd a:hover, .sub-nav li a:hover {
+	color:#f2c12e;
+}
+
+.sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
+	background:#f2c12e;
+}
+
+.sub-nav dt.active a:hover, .sub-nav dd.active a:hover, .sub-nav li.active a:hover {
+	background:#f2ba2e;
+	color:white;
+}
+
+.project-image {
+	transition: all .2s ease;
+	-webkit-transition: all 0.5s ease;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-filter: grayscale(100%); 
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+}
+
+.project-image:hover {
+    -webkit-filter: grayscale(0%); 
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
+	filter: gray;
+}
+
+#about {
+	padding: 100px 5%;
+	background:#f25252;
+}
+
+#about h2 {
+	color:white;
+	font: normal 500 40px "omnes-pro", sans-serif;
+}
+
+#about p {
+	color:white;
+	font: normal 200 16px/140% "omnes-pro", sans-serif;
+}
+
+#contact {
+	padding: 120px 5% 100px;
+}
+
+#contact h2 {
+	color:#3aa1bf;
+	font: normal 500 40px/100% "omnes-pro", sans-serif; 
+}
+
+#contact p {
+	font: normal 200 16px/140% "omnes-pro", sans-serif;
+}
+
+.contact-text-area {
+	height:200px;
+	min-height:200px;
+	min-width:100%;
+}
+
+.bottom {
+	padding: 50px 5%;
+	margin-bottom:100px;
+}
+
+p {
+	color:#333333;
+}
+
+form textarea {
+	font: normal 300 18px/100% "omnes-pro", sans-serif;
+	border: 2px solid #f2c12e;
+	border-radius: 15px 15px 0px 15px;
+}
+
+form input[type="email"] , form input[type="text"]{
+	font: normal 300 16px/100% "omnes-pro", sans-serif;
+	border: 2px solid #f25252;
+	border-radius: 12px;
+}
+
+form .button {
+	background:#3aa1bf;
+}
+
+form .button:hover {
+	background:#f25252;
+}
+ 
+footer {
+	background:#f2c12e;
+	color:white;
+}
+
+footer li {
+	list-style:none;
+	font: normal 400 15px "omnes-pro",sans-serif;
+}
+
+footer p a {
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	color:white;
+	font: normal 400 16px/140% "omnes-pro", sans-serif;
+}
+
+footer p a:hover, footer a:hover {
+	color:#f2aa2c;
+}
+
+.phone {
+	margin-top:-15px;
+}
+
+footer a {
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	color:#3aa1bf;
+}
+ 
+small {
+	transform: rotate(-90deg);
+	padding-top:50px;
+	font: normal 400 12px "omnes-pro", sans-serif;
+}
+
+#project-information {
+	padding: 50px 5% 0px;
+}
+
+#project-information h1 {
+	color:#f2c12e;
+	font: normal 400 40px "omnes-pro", sans-serif;
+}
+
+#project-information .project-type {
+	padding-top:0px;
+	color:#3aa1bf;
+	font: normal 300 18px/140% "omnes-pro", sans-serif;
+}
+
+#project-information .project-components {
+	margin-top:-20px;
+	color:#3aa1bf;
+	font: normal 300 18px/140% "omnes-pro", sans-serif;
+}
+
+#project-information .blurb p {
+	color:#333333;
+	font: normal 300 18px/140% "omnes-pro", sans-serif;
+}
+
+#project-images {
+	padding: 50px 5% 75px;
+}
+
+#project-images img {
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.5s ease;
+    -webkit-filter: grayscale(100%); 
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+}
+
+#project-images img:hover {
+    -webkit-filter: grayscale(0%); 
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
+	filter: gray;
+}
+
+.top-image {
+	border-radius: 50px 50px 0 0;
+}
+
+.bottom-image {
+	border-radius: 0 0 50px 50px;
+}
+
+#more-projects img {
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+    -webkit-filter: grayscale(100%); 
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+}
+
+#more-projects img:hover {
+    -webkit-filter: grayscale(0%); 
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
+	filter: gray;
+}
+
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+	padding:20px;
+}
+
+
+.project-1, .project-5 {
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.5s ease;
+	border: 0px solid #f25252;
+	padding:18px;
+}
+
+.project-3, .project-4 {
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.5s ease;
+	border: 0px solid #efc94c;
+	padding:18px;
+}
+
+.project-2, .project-6 {
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	border: 0px solid #3aa1bf;
+	padding:18px;
+}
+
+.project-1:hover, .project-5:hover {
+	border: 2px solid #f25252;
+	padding:18px;
+}
+
+.project-1:hover {
+	border-radius: 50px 0 0 0;
+}
+
+.project-3:hover {
+	border-radius: 0 50px 0 0;
+}
+
+.project-4:hover {
+	border-radius: 0 0 0 50px;
+}
+
+.project-6:hover {
+	border-radius: 0 0 50px 0;
+}
+
+.project-2:hover, .project-6:hover {
+	border: 2px solid #3aa1bf;
+	padding:18px;
+}
+
+.project-3:hover, .project-4:hover {
+	border: 2px solid #efc94c;
+	padding:18px;
+}
+
+.project-1 .image-border-padding {
+	padding-right:40px;
+}
+
+.project-2 .image-border-padding {
+	padding-left:40px;
+}
+
+.project-5 .image-border-padding {
+	padding-left:40px;
+}
+
+.project-6 .image-border-padding {
+	padding-right:40px;
+}
+
+.project-1 .image-border, .project-5 .image-border {
+	background:#f25252;
+	padding:2px;
+}
+
+.project-2 .image-border, .project-6 .image-border {
+	background:#3aa1bf;
+	padding:2px;
+}
+
+.project-3 .image-border, .project-4 .image-border {
+	background:#f2c12e;
+	padding:2px;
+}
+
+.project-1 .project-description, .project-6 .project-description {
+	position:absolute;
+    top: 50%;                         
+    transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	margin-left:20px;
+	left:47%;
+}
+
+.project-2 .project-description, .project-5 .project-description {
+    position: absolute;
+    top: 50%;                         
+    transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	margin-right:20px;
+}
+
+.project-1 .project-description, .project-2 .project-description, .project-5 .project-description, .project-6 .project-description {
+	padding-right:20px;
+}
+
+.project-1 a, .project-5 a {
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	color:#f25252;
+}
+
+.project-2 a, .project-6 a {
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	color:#3aa1bf;
+}
+
+.project-3 a, .project-4 a {
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	color:#efc94c;
+}
+
+.project-1 a:hover, .project-5 a:hover {
+	color:#d14545;
+}
+
+.project-2 a:hover, .project-6 a:hover {
+	color:#32849c;
+}
+
+.project-3 a:hover, .project-4 a:hover {
+	color:#f2ba2e;
+}
+
+.project-3 .project-description, .project-4 .project-description {
+	padding-top:50px;
+}
+
+#project-blurb {
+	padding-top:20%;
+	font: normal 400 20px "omnes-pro", sans-serif;
+}
+
+#more-projects {
+	padding: 0px 5% 75px;
+}
+
+#more-projects img {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.next-links, .previous-links {
+	padding-top:50px;
+}
+
+.next-links p {
+	color:#f25252;
+	font: normal 300 20px "omnes-pro", sans-serif;
+	text-align:right;
+	padding-right:20px;
+}
+
+.next-links .next-project {
+	margin-top:0px;
+}
+
+.next-links .project-name {
+	margin-top:-20px;
+	font: normal 300 30px/100% "omnes-pro", sans-serif;
+}
+
+.next-links p:hover {
+	color:#D14545;
+}
+
+.previous-links p {
+	color:#3aa1bf;
+	font: normal 300 20px "omnes-pro", sans-serif;
+	text-align:left;
+	padding-left:20px;
+}
+
+.previous-links .previous-project {
+	margin-top:0px;
+}
+
+.previous-links .project-name {
+	margin-top:-20px;
+	font: normal 300 30px/100% "omnes-pro", sans-serif;
+}
+
+.previous-links p:hover {
+	color:#32849C;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	
+	.project-description {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	
+	#home {
+		background-size:cover;
+	}
+	
+	#home h1 {
+		font: normal 600 40px "omnes-pro", sans-serif;
+	}
+
+	#projects {
+		padding: 50px 5% 75px;
+	}
+	
+	#projects a {
+		font: normal 300 35px "omnes-pro", sans-serif;
+	}
+	
+	#projects p {
+		font: normal 300 14px/140% "omnes-pro", sans-serif;
+	}
+	
+	.project-1 .project-description, .project-6 .project-description {
+		left:45%;
+		padding-right:10px;
+	}
+	
+	.project-2 .project-description, .project-5 .project-description {
+		padding-right:10px;
+	}
+	
+	.project-3 .project-description, .project-4 .project-description {
+		padding-top:20px;
+	}
+	
+	#about {
+		padding: 75px 5%;
+	}
+	
+	#contact {
+		padding: 100px 5% 75px;
+	}
+	
+	#contact h2 {
+		color:#3aa1bf;
+		font: normal 500 35px/100% "omnes-pro", sans-serif; 
+	}
+	
+	#contact p {
+		font: normal 200 16px/140% "omnes-pro", sans-serif;
+	}
+	
+	.contact-text-area {
+		height:200px;
+		min-height:200px;
+		min-width:100%;
+	}
+	
+	.bottom {
+		padding: 50px 5%;
+		margin-bottom:75px;
+	}
+	 
+	small {
+		transform: rotate(-90deg);
+		padding-top:50px;
+	}
+	
+	#project-information .project-components {
+		margin-top:-20px;
+		color:#3aa1bf;
+		font: normal 300 18px/140% "omnes-pro", sans-serif;
+	}
+	
+	#project-information .blurb p {
+		color:#333333;
+		font: normal 300 16px/150% "omnes-pro", sans-serif;
+	}
+	
+	#project-images {
+		padding: 50px 5%;
+	}
+	
+	#project-blurb {
+		padding-top:10%;
+	}
+	
+	#more-projects {
+		padding: 0px 5% 50px;
+	}
+	
+	.next-links .next-project {
+		margin-top:-20px;
+		font: normal 300 15px "omnes-pro", sans-serif;
+	}
+	
+	.next-links .project-name {
+		margin-top:-20px;
+		font: normal 300 20px/100% "omnes-pro", sans-serif;
+	}
+	
+	.previous-links .previous-project {
+		margin-top:-20px;
+		font: normal 300 15px "omnes-pro", sans-serif;
+	}
+	
+	.previous-links .project-name {
+		margin-top:-20px;
+		font: normal 300 20px/100% "omnes-pro", sans-serif;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	
+	.logo {
+		margin-top:-7px;
+		padding-left:13px;
+		padding-top:18px;
+		height:42px;
+	}
+	
+	.top-bar {
+		background:#333333;
+	}
+	
+	.top-bar-section li a:not(.button) {
+		transition: all 0.4s ease;
+		-webkit-transition: all 0.4s ease;
+		text-align:center;
+		padding-left:0;
+		color:white;
+		background:#efc94c;
+		font: normal 500 20px "omnes-pro", sans-serif;
+		border-bottom: solid .25px white;
+	}
+	
+	.top-bar-section li:not(.has-form) a:not(.button):hover {
+  		background:#f2ba2e;
+	}
+	
+	.title-area {
+		background:#333333;
+	}
+	
+	#home {
+		height:100vh;
+		position:relative;
+	}
+	
+	#home h1 {
+		font: normal 600 30px "omnes-pro", sans-serif;
+		padding-top:10px;
+	}
+	
+	.home-content {
+	   margin: 0;
+	   position: absolute;
+	   top: 50%;                         
+	   transform: translate(0, -50%)
+	}
+	
+	.project-description {
+		padding-top:10px;
+		padding-left:15px;
+		padding-right:15px;
+		padding-bottom:30px;
+	} 
+	
+	.project-image {
+		border-radius:0;
+		-webkit-border-radius:0;
+		-moz-border-radius:0;
+		-webkit-filter: grayscale(0%); 
+		-moz-filter: grayscale(0%);
+		-ms-filter: grayscale(0%);
+		-o-filter: grayscale(0%);
+		filter: grayscale(0%);
+		filter: ;
+	}
+	
+	#project-images img {
+		border-radius:0;
+		-webkit-border-radius:0;
+		-moz-border-radius:0;
+		-webkit-filter: grayscale(0%); 
+		-moz-filter: grayscale(0%);
+		-ms-filter: grayscale(0%);
+		-o-filter: grayscale(0%);
+		filter: grayscale(0%);
+		filter: ;
+	}
+	
+	#more-projects img {
+		-webkit-filter: grayscale(0%); 
+		-moz-filter: grayscale(0%);
+		-ms-filter: grayscale(0%);
+		-o-filter: grayscale(0%);
+		filter: grayscale(0%);
+		filter: ;
+	}
+
+	#projects {
+		padding: 30px 5% 0px;
+	}
+
+	#projects a {
+		font: normal 300 35px "omnes-pro", sans-serif;
+	}
+	
+	#projects p {
+		font: normal 300 15px/140% "omnes-pro", sans-serif;
+	}
+	
+	.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+		padding:0;
+	}
+
+	.project-1:hover, .project-2:hover, .project-3:hover, .project-5:hover, .project-4:hover, .project-6:hover {
+		border: 0px none white;
+		padding:0px;
+	}
+
+	#about {
+		padding: 40px 5%;
+	}
+	
+	#about h2 {
+		font: normal 500 35px "omnes-pro", sans-serif;
+	}
+
+	#contact {
+		padding: 30px 5%;
+	}
+	
+	#contact h2 {
+		font: normal 500 30px "omnes-pro", sans-serif; 
+	}
+
+	.bottom {
+		padding: 30px 5%;
+		margin-bottom:70px;
+	}
+	
+	footer li {
+		font: normal 400 10px "omnes-pro",sans-serif;
+	}
+	
+	footer p {
+		font: normal 400 15px/140% "omnes-pro", sans-serif;
+	}
+ 
+	small {
+		transform: rotate(-90deg);
+		padding-top:50px;
+	}
+	
+	#project-information {
+		padding: 0px 5%;
+		margin-bottom:-10px;
+	}
+	
+	#project-information h1 {
+		padding-top:20px;
+	}
+	
+	#project-information .blurb p {
+		color:#333333;
+		font: normal 300 15px/140% "omnes-pro", sans-serif;
+	}
+	
+	#project-images {
+		padding: 30px 5%;
+	}
+
+	#project-blurb {
+		padding-top:30px;
+		padding-bottom:10px;
+	}
+	
+	#project-blurb p {
+		font: normal 300 15px/140% "omnes-pro", sans-serif;
+	}
+	
+	#more-projects {
+		padding: 0px 5% 20px;
+	}
+	
+	#more-projects p {
+		padding-top:30px;
+	}
+	
+	.next-previous-links {
+		padding-top:0px;
+	}
+	
+	.image-border {
+		background:none;
+		padding:0px;
+	}
+
+	.project-image {
+		padding:0px;
+	}
+	
+	.project-1 .image-border-padding {
+		padding-right:0px;
+	}
+
+	.project-2 .image-border-padding {
+		padding-left:0px;
+	}
+
+	.project-5 .image-border-padding {
+		padding-left:0px;
+	}
+	
+	.project-6 .image-border-padding {
+		padding-right:0px;
+	}
+	
+	.project-1 .image-border, .project-5 .image-border {
+		background:none;
+		padding:0px;
+	}
+	
+	.project-2 .image-border, .project-6 .image-border {
+		background:none;
+		padding:0px;
+	}
+	
+	.project-3 .image-border, .project-4 .image-border {
+		background:none;
+		padding:0px;
+	}
+	
+	.project-1 .project-description, .project-6 .project-description {
+		padding-top:0px;
+		margin-left:0px;
+	}
+	
+	.project-2 .project-description, .project-5 .project-description {
+		padding-top:0px;
+		padding-right:10px;
+		margin-right:0px;
+	}
+	
+	.project-1 .project-description, .project-6 .project-description {
+		position:relative;
+		top: 0%;                         
+		transform: translate(0, 0%);
+		-webkit-transform: translate(0, 0%);
+		margin-left:0px;
+		padding-right:10px;
+		left:0;
+	}
+
+	.project-2 .project-description, .project-5 .project-description {
+		position:relative;
+		top: 0%;                         
+		transform: translate(0, 0%);
+		-webkit-transform: translate(0, 0%);
+		margin-right:0px;
+		left:0;
+	}
+	
+	.project-3 .project-description, .project-4 .project-description {
+		padding-top:0;
+	}
+	
+	.next-links .next-project {
+		margin-top:-60px;
+		font: normal 300 15px "omnes-pro", sans-serif;
+	}
+	
+	.next-links .project-name {
+		margin-top:-50px;
+		font: normal 300 20px "omnes-pro", sans-serif;
+	}
+	
+	.previous-links .previous-project {
+		margin-top:-60px;
+		font: normal 300 15px "omnes-pro", sans-serif;
+	}
+	
+	.previous-links .project-name {
+		margin-top:-50px;
+		font: normal 300 20px "omnes-pro", sans-serif;
+	}
+	
+	.previous-links p {
+		padding-left:0px;
+	}
+	
+	.next-links p {
+		padding-right:0px;
+	}
+}

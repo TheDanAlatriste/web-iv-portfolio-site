@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#project-information h1, .sub-nav dt a:hover, .sub-nav dd a:hover, .sub-nav li a:hover {
+	color:#f25252;
+}
+
+#project-information .project-type, #project-information .project-components, .previous-links p, footer a {
+	color:#efc94c;
+}
+
+.previous-links p:hover {
+	color:#f2ba2e;
+}
+
+.next-links p {
+	color:#3aa1bf;
+}
+
+.next-links p:hover {
+	color:#32849c;
+}
+
+footer {
+	background:#f25252;
+}
+
+footer p a:hover, footer a:hover {
+	color:#d14545;
+}
+
+.top-bar-section li a:not(.button) {
+	background:#f25252;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background:#d14545;
+}
