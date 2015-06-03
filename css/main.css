@@ -45,7 +45,7 @@ h1 {
 }
 
 #projects a {
-	font: normal 300 40px "omnes-pro", sans-serif;
+	font: normal 300 40px/100% "omnes-pro", sans-serif;
 }
 
 #projects p {
@@ -101,7 +101,7 @@ h1 {
 	-ms-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
-	filter: ;
+	filter: none;
 }
 
 #about {
@@ -160,6 +160,8 @@ form input[type="email"] , form input[type="text"]{
 }
 
 form .button {
+	margin-left:15px;
+	font: normal 300 18px/100% "omnes-pro", sans-serif;
 	background:#3aa1bf;
 }
 
@@ -210,7 +212,7 @@ small {
 
 #project-information h1 {
 	color:#f2c12e;
-	font: normal 400 40px "omnes-pro", sans-serif;
+	font: normal 400 40px/110% "omnes-pro", sans-serif;
 }
 
 #project-information .project-type {
@@ -251,7 +253,7 @@ small {
 	-ms-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
-	filter: ;
+	filter:none;
 }
 
 .top-image {
@@ -279,7 +281,7 @@ small {
 	-ms-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
 	filter: grayscale(0%);
-	filter: ;
+	filter:none;
 }
 
 .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
@@ -484,6 +486,23 @@ small {
 	color:#32849C;
 }
 
+.reveal-modal {
+	padding:0;
+	background:none;
+}
+
+.reveal-modal img {
+	width:100%;
+}
+
+.close-reveal-modal {
+	color:none;
+}
+
+.reveal-modal .close-reveal-modal {
+	color:#efc94c;
+}
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 	
 	.project-description {
@@ -504,11 +523,15 @@ small {
 	}
 	
 	#projects a {
-		font: normal 300 35px "omnes-pro", sans-serif;
+		font: normal 300 35px/100% "omnes-pro", sans-serif;
 	}
 	
 	#projects p {
 		font: normal 300 14px/140% "omnes-pro", sans-serif;
+	}
+	
+	.project-description h2 {
+		line-height:2px;
 	}
 	
 	.project-1 .project-description, .project-6 .project-description {
@@ -666,7 +689,7 @@ small {
 		-ms-filter: grayscale(0%);
 		-o-filter: grayscale(0%);
 		filter: grayscale(0%);
-		filter: ;
+		filter:none;
 	}
 	
 	#project-images img {
@@ -678,7 +701,7 @@ small {
 		-ms-filter: grayscale(0%);
 		-o-filter: grayscale(0%);
 		filter: grayscale(0%);
-		filter: ;
+		filter:none;
 	}
 	
 	#more-projects img {
@@ -687,7 +710,7 @@ small {
 		-ms-filter: grayscale(0%);
 		-o-filter: grayscale(0%);
 		filter: grayscale(0%);
-		filter: ;
+		filter:none;
 	}
 
 	#projects {
@@ -695,7 +718,7 @@ small {
 	}
 
 	#projects a {
-		font: normal 300 35px "omnes-pro", sans-serif;
+		font: normal 300 35px/100% "omnes-pro", sans-serif;
 	}
 	
 	#projects p {
@@ -824,11 +847,6 @@ small {
 		padding:0px;
 	}
 	
-	.project-1 .project-description, .project-6 .project-description {
-		padding-top:0px;
-		margin-left:0px;
-	}
-	
 	.project-2 .project-description, .project-5 .project-description {
 		padding-top:0px;
 		padding-right:10px;
@@ -858,24 +876,28 @@ small {
 		padding-top:0;
 	}
 	
+	.project-description {
+		margin-top:5px;
+	}
+	
 	.next-links .next-project {
 		margin-top:-60px;
-		font: normal 300 15px "omnes-pro", sans-serif;
+		font: normal 300 15px/100% "omnes-pro", sans-serif;
 	}
 	
 	.next-links .project-name {
 		margin-top:-50px;
-		font: normal 300 20px "omnes-pro", sans-serif;
+		font: normal 300 20px/120% "omnes-pro", sans-serif;
 	}
 	
 	.previous-links .previous-project {
 		margin-top:-60px;
-		font: normal 300 15px "omnes-pro", sans-serif;
+		font: normal 300 15px/100% "omnes-pro", sans-serif;
 	}
 	
 	.previous-links .project-name {
 		margin-top:-50px;
-		font: normal 300 20px "omnes-pro", sans-serif;
+		font: normal 300 20px/120% "omnes-pro", sans-serif;
 	}
 	
 	.previous-links p {
@@ -885,4 +907,21 @@ small {
 	.next-links p {
 		padding-right:0px;
 	}
+	
+	.reveal-modal {
+		min-height:inherit;
+		margin-top:44px;
+	}
+	
+	.reveal-modal img {
+		width:100%;
+		float:left;
+		padding-bottom:0;
+		margin-bottom:0;
+	}
+	
+	.close-reveal-modal {
+		margin-top:0px;
+	}
+
 }

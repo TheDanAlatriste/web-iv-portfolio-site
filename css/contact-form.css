@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background:#3aa1bf;
+	width:100%;
+	height:100%;
+}
+
+section {
+	float:left;
+	position:absolute;
+    top: 50%;                         
+    transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	text-align:center;
+}
+
+h1 {
+	font: normal 700 40px "omnes-pro", sans-serif;
+	color:white;
+	text-transform:uppercase;
+}
+
+p {
+	font: normal 400 20px "omnes-pro", sans-serif;
+	color:white;
+}
+
+#redirecting {
+	font: normal 600 20px "omnes-pro", sans-serif;
+	color:white
+}
+
+#option {
+	font: normal 400 20px "omnes-pro", sans-serif;
+	color:white;
+}
+
+#option a {
+	color:#f2c12e;
+}
+
+#option a:hover {
+	color:white;
+}
+
+
+.loader {
+  font-size: 20px;
+  margin: 5em auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0em -3em 0em 0.2em #f2c12e, 2em -2em 0 0em #f2c12e, 3em 0em 0 -0.5em #f2c12e, 2em 2em 0 -0.5em #f2c12e, 0em 3em 0 -0.5em #f2c12e, -2em 2em 0 -0.5em #f2c12e, -3em 0em 0 -0.5em #f2c12e, -2em -2em 0 0em #f2c12e;
+  }
+  12.5% {
+    box-shadow: 0em -3em 0em 0em #f2c12e, 2em -2em 0 0.2em #f2c12e, 3em 0em 0 0em #f2c12e, 2em 2em 0 -0.5em #f2c12e, 0em 3em 0 -0.5em #f2c12e, -2em 2em 0 -0.5em #f2c12e, -3em 0em 0 -0.5em #f2c12e, -2em -2em 0 -0.5em #f2c12e;
+  }
+  25% {
+    box-shadow: 0em -3em 0em -0.5em #f2c12e, 2em -2em 0 0em #f2c12e, 3em 0em 0 0.2em #f2c12e, 2em 2em 0 0em #f2c12e, 0em 3em 0 -0.5em #f2c12e, -2em 2em 0 -0.5em #f2c12e, -3em 0em 0 -0.5em #f2c12e, -2em -2em 0 -0.5em #f2c12e;
+  }
+  37.5% {
+    box-shadow: 0em -3em 0em -0.5em #f2c12e, 2em -2em 0 -0.5em #f2c12e, 3em 0em 0 0em #f2c12e, 2em 2em 0 0.2em #f2c12e, 0em 3em 0 0em #f2c12e, -2em 2em 0 -0.5em #f2c12e, -3em 0em 0 -0.5em #f2c12e, -2em -2em 0 -0.5em #f2c12e;
+  }
+  50% {
+    box-shadow: 0em -3em 0em -0.5em #f2c12e, 2em -2em 0 -0.5em #f2c12e, 3em 0em 0 -0.5em #f2c12e, 2em 2em 0 0em #f2c12e, 0em 3em 0 0.2em #f2c12e, -2em 2em 0 0em #f2c12e, -3em 0em 0 -0.5em #f2c12e, -2em -2em 0 -0.5em #f2c12e;
+  }
+  62.5% {
+    box-shadow: 0em -3em 0em -0.5em #f2c12e, 2em -2em 0 -0.5em #f2c12e, 3em 0em 0 -0.5em #f2c12e, 2em 2em 0 -0.5em #f2c12e, 0em 3em 0 0em #f2c12e, -2em 2em 0 0.2em #f2c12e, -3em 0em 0 0em #f2c12e, -2em -2em 0 -0.5em #f2c12e;
+  }
+  75% {
+    box-shadow: 0em -3em 0em -0.5em #f2c12e, 2em -2em 0 -0.5em #f2c12e, 3em 0em 0 -0.5em #f2c12e, 2em 2em 0 -0.5em #f2c12e, 0em 3em 0 -0.5em #f2c12e, -2em 2em 0 0em #f2c12e, -3em 0em 0 0.2em #f2c12e, -2em -2em 0 0em #f2c12e;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0em 0em #f2c12e, 2em -2em 0 -0.5em #f2c12e, 3em 0em 0 -0.5em #f2c12e, 2em 2em 0 -0.5em #f2c12e, 0em 3em 0 -0.5em #f2c12e, -2em 2em 0 0em #f2c12e, -3em 0em 0 0em #f2c12e, -2em -2em 0 0.2em #f2c12e;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0em -3em 0em 0.2em #f2c12e, 2em -2em 0 0em #f2c12e, 3em 0em 0 -0.5em #f2c12e, 2em 2em 0 -0.5em #f2c12e, 0em 3em 0 -0.5em #f2c12e, -2em 2em 0 -0.5em #f2c12e, -3em 0em 0 -0.5em #f2c12e, -2em -2em 0 0em #f2c12e;
+  }
+  12.5% {
+    box-shadow: 0em -3em 0em 0em #f2c12e, 2em -2em 0 0.2em #f2c12e, 3em 0em 0 0em #f2c12e, 2em 2em 0 -0.5em #f2c12e, 0em 3em 0 -0.5em #f2c12e, -2em 2em 0 -0.5em #f2c12e, -3em 0em 0 -0.5em #f2c12e, -2em -2em 0 -0.5em #f2c12e;
+  }
+  25% {
+    box-shadow: 0em -3em 0em -0.5em #f2c12e, 2em -2em 0 0em #f2c12e, 3em 0em 0 0.2em #f2c12e, 2em 2em 0 0em #f2c12e, 0em 3em 0 -0.5em #f2c12e, -2em 2em 0 -0.5em #f2c12e, -3em 0em 0 -0.5em #f2c12e, -2em -2em 0 -0.5em #f2c12e;
+  }
+  37.5% {
+    box-shadow: 0em -3em 0em -0.5em #f2c12e, 2em -2em 0 -0.5em #f2c12e, 3em 0em 0 0em #f2c12e, 2em 2em 0 0.2em #f2c12e, 0em 3em 0 0em #f2c12e, -2em 2em 0 -0.5em #f2c12e, -3em 0em 0 -0.5em #f2c12e, -2em -2em 0 -0.5em #f2c12e;
+  }
+  50% {
+    box-shadow: 0em -3em 0em -0.5em #f2c12e, 2em -2em 0 -0.5em #f2c12e, 3em 0em 0 -0.5em #f2c12e, 2em 2em 0 0em #f2c12e, 0em 3em 0 0.2em #f2c12e, -2em 2em 0 0em #f2c12e, -3em 0em 0 -0.5em #f2c12e, -2em -2em 0 -0.5em #f2c12e;
+  }
+  62.5% {
+    box-shadow: 0em -3em 0em -0.5em #f2c12e, 2em -2em 0 -0.5em #f2c12e, 3em 0em 0 -0.5em #f2c12e, 2em 2em 0 -0.5em #f2c12e, 0em 3em 0 0em #f2c12e, -2em 2em 0 0.2em #f2c12e, -3em 0em 0 0em #f2c12e, -2em -2em 0 -0.5em #f2c12e;
+  }
+  75% {
+    box-shadow: 0em -3em 0em -0.5em #f2c12e, 2em -2em 0 -0.5em #f2c12e, 3em 0em 0 -0.5em #f2c12e, 2em 2em 0 -0.5em #f2c12e, 0em 3em 0 -0.5em #f2c12e, -2em 2em 0 0em #f2c12e, -3em 0em 0 0.2em #f2c12e, -2em -2em 0 0em #f2c12e;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0em 0em #f2c12e, 2em -2em 0 -0.5em #f2c12e, 3em 0em 0 -0.5em #f2c12e, 2em 2em 0 -0.5em #f2c12e, 0em 3em 0 -0.5em #f2c12e, -2em 2em 0 0em #f2c12e, -3em 0em 0 0em #f2c12e, -2em -2em 0 0.2em #f2c12e;
+  }
+}

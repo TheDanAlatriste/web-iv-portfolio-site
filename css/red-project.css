@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#project-information h1, .sub-nav dt a:hover, .sub-nav dd a:hover, .sub-nav li a:hover {
+#project-information h1, .sub-nav dt a:hover, .sub-nav dd a:hover, .sub-nav li a:hover, .reveal-modal .close-reveal-modal {
 	color:#f25252;
 }
 
