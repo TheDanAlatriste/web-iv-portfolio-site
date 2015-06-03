@@ -29,6 +29,10 @@ h1 {
 	text-transform: uppercase;
 }
 
+#home svg:hover {
+	opacity:.85;
+}
+
 .image-border {
 	background:none;
 	border-radius: 50%;
