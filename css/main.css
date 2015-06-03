@@ -30,7 +30,12 @@ h1 {
 }
 
 #home svg:hover {
-	opacity:.85;
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+}
+
+#home svg:hover {
+	opacity:.75;
 }
 
 .image-border {
