@@ -11,11 +11,10 @@
 }
 
 .home-content {
-	margin: 0;
-    position: absolute;
-    top: 50%;                         
-    transform: translate(0, -50%);
-	-webkit-transform: translate(0, -50%);
+	position: absolute;
+  	height: 100%;
+	top:50%;
+	margin-top:-20%;
 }
 
 h1 {
@@ -29,12 +28,12 @@ h1 {
 	text-transform: uppercase;
 }
 
-#home svg:hover {
+#home #svg:hover {
 	transition: all 0.4s ease;
 	-webkit-transition: all 0.4s ease;
 }
 
-#home svg:hover {
+#home #svg:hover {
 	opacity:.75;
 }
 
@@ -437,12 +436,21 @@ small {
 }
 
 #project-blurb {
-	padding-top:20%;
-	font: normal 400 20px "omnes-pro", sans-serif;
+	height:100%;
+	position:relative;
+}
+
+#project-blurb p {
+	position: absolute;
+  	top: 50%;
+  	height: 100%;
+  	margin-top: 45%;
+	font: normal 400 18px "omnes-pro", sans-serif;
 }
 
 #more-projects {
 	padding: 0px 5% 75px;
+	position:relative;
 }
 
 #more-projects img {
@@ -452,7 +460,15 @@ small {
 }
 
 .next-links, .previous-links {
-	padding-top:50px;
+	position:relative;
+}
+
+.next-links a {
+	color:#f25252;
+}
+
+.next-links a:hover {
+	color:#D14545;
 }
 
 .next-links p {
@@ -462,8 +478,11 @@ small {
 	padding-right:20px;
 }
 
-.next-links .next-project {
-	margin-top:0px;
+.next-links div, .previous-links div {
+	position: absolute;
+  	top: 50%;
+  	height: 100%;
+  	margin-top: 25%; 
 }
 
 .next-links .project-name {
@@ -480,10 +499,6 @@ small {
 	font: normal 300 20px "omnes-pro", sans-serif;
 	text-align:left;
 	padding-left:20px;
-}
-
-.previous-links .previous-project {
-	margin-top:0px;
 }
 
 .previous-links .project-name {
@@ -536,7 +551,7 @@ small {
 	}
 	
 	#projects p {
-		font: normal 300 14px/140% "omnes-pro", sans-serif;
+		font: normal 300 18px/140% "omnes-pro", sans-serif;
 	}
 	
 	.project-description h2 {
@@ -570,7 +585,7 @@ small {
 	}
 	
 	#contact p {
-		font: normal 200 16px/140% "omnes-pro", sans-serif;
+		font: normal 200 18px/140% "omnes-pro", sans-serif;
 	}
 	
 	.contact-text-area {
@@ -587,6 +602,7 @@ small {
 	small {
 		transform: rotate(-90deg);
 		padding-top:50px;
+		font: normal 400 12px "omnes-pro", sans-serif;
 	}
 	
 	#project-information .project-components {
@@ -597,15 +613,26 @@ small {
 	
 	#project-information .blurb p {
 		color:#333333;
-		font: normal 300 16px/150% "omnes-pro", sans-serif;
+		font: normal 300 18px/150% "omnes-pro", sans-serif;
 	}
 	
 	#project-images {
 		padding: 50px 5%;
 	}
 	
-	#project-blurb {
-		padding-top:10%;
+	#project-blurb p {
+		position: absolute;
+		top: 50%;
+		height: 100%;
+		margin-top: 40%;
+		font: normal 400 16px "omnes-pro", sans-serif;
+	}
+	
+	.next-links div, .previous-links div {
+		position: absolute;
+		top: 50%;
+		height: 100%;
+		margin-top: 30%; 
 	}
 	
 	#more-projects {
@@ -643,7 +670,7 @@ small {
 	}
 	
 	.top-bar {
-		background:#333333;
+		background:none;
 	}
 	
 	.top-bar-section li a:not(.button) {
@@ -657,12 +684,42 @@ small {
 		border-bottom: solid .25px white;
 	}
 	
+	.top-bar.expanded {
+		background:none;
+	}
+	
+	
+	.top-bar .toggle-topbar.menu-icon a::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		display: block;
+		width: 16px;
+		top: 0;
+		height: 0;
+		-webkit-box-shadow: 1px 10px 1px 1px #efc94c, 1px 16px 1px 1px #efc94c, 1px 22px 1px 1px #efc94c;
+		box-shadow: 0 9px 0 1px #efc94c, 0 16px 0 1px #efc94c, 0 23px 0 1px #efc94c;
+		margin-right:15px;
+	}
+	
+	.top-bar.expanded .title-area {
+		background:white;
+		opacity:.98;
+	}
+	
 	.top-bar-section li:not(.has-form) a:not(.button):hover {
   		background:#f2ba2e;
 	}
 	
 	.title-area {
-		background:#333333;
+		background:white;
+		opacity:.98;
+	}
+	
+	.top-bar {
+		-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.11);
+		-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.11);
+		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.11);
 	}
 	
 	#home {
@@ -673,13 +730,14 @@ small {
 	#home h1 {
 		font: normal 600 30px "omnes-pro", sans-serif;
 		padding-top:10px;
+		padding-bottom:10px;
 	}
 	
 	.home-content {
-	   margin: 0;
 	   position: absolute;
-	   top: 50%;                         
-	   transform: translate(0, -50%)
+  		top: 50%;
+  		height: 100%;
+  		margin-top: -50%;
 	}
 	
 	.project-description {
@@ -731,7 +789,7 @@ small {
 	}
 	
 	#projects p {
-		font: normal 300 15px/140% "omnes-pro", sans-serif;
+		font: normal 300 18px/140% "omnes-pro", sans-serif;
 	}
 	
 	.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
@@ -755,6 +813,10 @@ small {
 		padding: 30px 5%;
 	}
 	
+	#contact p {
+		padding-bottom:20px;
+	}
+	
 	#contact h2 {
 		font: normal 500 30px "omnes-pro", sans-serif; 
 	}
@@ -774,7 +836,7 @@ small {
  
 	small {
 		transform: rotate(-90deg);
-		padding-top:50px;
+		padding-top:70px;
 	}
 	
 	#project-information {
@@ -788,7 +850,7 @@ small {
 	
 	#project-information .blurb p {
 		color:#333333;
-		font: normal 300 15px/140% "omnes-pro", sans-serif;
+		font: normal 300 18px/140% "omnes-pro", sans-serif;
 	}
 	
 	#project-images {
@@ -798,10 +860,13 @@ small {
 	#project-blurb {
 		padding-top:30px;
 		padding-bottom:10px;
+		margin-top:0;
 	}
 	
 	#project-blurb p {
-		font: normal 300 15px/140% "omnes-pro", sans-serif;
+		position:relative;
+		margin-top:5px;
+		font: normal 300 18px/140% "omnes-pro", sans-serif;
 	}
 	
 	#more-projects {
@@ -810,10 +875,6 @@ small {
 	
 	#more-projects p {
 		padding-top:30px;
-	}
-	
-	.next-previous-links {
-		padding-top:0px;
 	}
 	
 	.image-border {
@@ -889,24 +950,21 @@ small {
 		margin-top:5px;
 	}
 	
-	.next-links .next-project {
+	.next-links .next-project, .previous-links .previous-project {
 		margin-top:-60px;
-		font: normal 300 15px/100% "omnes-pro", sans-serif;
+		font: normal 300 18px/100% "omnes-pro", sans-serif;
+		text-align:center;
 	}
 	
-	.next-links .project-name {
-		margin-top:-50px;
-		font: normal 300 20px/120% "omnes-pro", sans-serif;
+	.next-links .project-name, .previous-links .project-name {
+		margin-top:-45px;
+		font: normal 300 23px/120% "omnes-pro", sans-serif;
+		text-align:center;
 	}
-	
-	.previous-links .previous-project {
-		margin-top:-60px;
-		font: normal 300 15px/100% "omnes-pro", sans-serif;
-	}
-	
-	.previous-links .project-name {
-		margin-top:-50px;
-		font: normal 300 20px/120% "omnes-pro", sans-serif;
+
+	.previous-links, .next-links {
+		padding-top:50px;
+		margin-bottom:60px;
 	}
 	
 	.previous-links p {
@@ -931,6 +989,12 @@ small {
 	
 	.close-reveal-modal {
 		margin-top:0px;
+	}
+	
+	small {
+		transform: rotate(-90deg);
+		padding-top:50px;
+		font: normal 400 10px "omnes-pro", sans-serif;
 	}
 
 }

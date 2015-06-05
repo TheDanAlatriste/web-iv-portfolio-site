@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	
+.home-content {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+}
+
+@media only screen and (max-width: 40em) {
+	
+.home-content {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+}

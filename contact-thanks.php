@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
 <head>
   <title>ALATRISTE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/foundation.css"/>
   <meta http-equiv="refresh" content="5,url=index.html"/>
   <link rel="stylesheet" type="text/css" href="css/contact-form.css"/>

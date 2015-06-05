@@ -1,6 +1,6 @@
 <?php
 
-$EmailFrom = "chriscoyier@gmail.com";
+$EmailFrom = "form@thedanalatriste.com";
 $EmailTo = "thedanalatriste@yahoo.com";
 $Subject = "Contact Form Submission from Alatriste Portfolio Site";
 $Name = Trim(stripslashes($_POST['Name']));

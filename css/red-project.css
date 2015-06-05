@@ -5,19 +5,19 @@
 	color:#f25252;
 }
 
-#project-information .project-type, #project-information .project-components, .previous-links p, footer a {
+#project-information .project-type, #project-information .project-components, .previous-links p a, footer a {
 	color:#efc94c;
 }
 
-.previous-links p:hover {
+.previous-links p a:hover {
 	color:#f2ba2e;
 }
 
-.next-links p {
+.next-links p a {
 	color:#3aa1bf;
 }
 
-.next-links p:hover {
+.next-links p a:hover {
 	color:#32849c;
 }
 
@@ -35,4 +35,9 @@ footer p a:hover, footer a:hover {
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
 	background:#d14545;
+}
+
+.top-bar .toggle-topbar.menu-icon a::after {
+	-webkit-box-shadow: 1px 10px 1px 1px #f25252, 1px 16px 1px 1px #f25252, 1px 22px 1px 1px #f25252;
+	box-shadow: 0 9px 0 1px #f25252, 0 16px 0 1px #f25252, 0 23px 0 1px #f25252;
 }
